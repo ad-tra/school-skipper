@@ -20,6 +20,7 @@ you can download the project as a .zip file and extract it in your pc or clone t
 # Usage
 
 [![Demo CountPages alpha](https://im6.ezgif.com/tmp/ezgif-6-f464ab708e9a.gif)](https://streamable.com/e/6aurbk)
+
 *Click on the GIF to view full preview*
 
 
