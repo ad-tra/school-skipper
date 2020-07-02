@@ -1,0 +1,64 @@
+.body{
+	-fx-background-color: #EAECEE;
+}
+
+.left-pane{
+	-fx-background-color: linear-gradient(to bottom right, #5D6D7E, #5F6E7E)
+		
+}
+.field
+{
+ 	-fx-background-color: #F0F2F4;	
+ 	-fx-prompt-text-fill: gray;
+ 	-fx-font-size: 11pt;
+ 	-jfx-focus-color: #527498;
+ 	-jfx-unfocus-color: #7fbbca;
+	-jfx-selected-color: #527498;
+	-jfx-unselected-color: #7fbbca;
+}
+
+.field-error
+{
+	 -fx-background-color: #F9EBEA;	
+ 	-fx-prompt-text-fill: gray;
+ 	-fx-font-size: 11pt;
+ 	-jfx-focus-color: #CB4335;
+ 	-jfx-unfocus-color: #CB4335;
+ 	-fx-cursor: text;
+}
+.back-button:hover
+{
+	-fx-blend-mode:SRC_OVER;
+}
+.button{
+	-fx-background-color: linear-gradient(to bottom right, #9FCEB4, #9AC0CA);
+
+	-fx-cursor: hand;
+	-fx-background-radius: 20px;
+}
+.button:hover{
+ -fx-background-color: linear-gradient(to bottom right, #7DCEA0, #7fbbca)
+
+}
+
+.button-secondary
+{
+    -fx-text-fill: linear-gradient(to bottom right, #7DCEA0, #7fbbca) ;
+	fx-background-radius: 20px;
+	-fx-background-color: #5D6D7E;
+  	-fx-border-style: solid solid solid solid;
+  	-fx-border-radius: 50px;
+    -fx-border-width: 2;
+    -fx-border-color: #9FCEB4;
+
+}
+.button-secondary:hover
+{
+	 -fx-text-fill: #2b3d50;
+	-fx-background-radius: 20px;
+	-fx-background-color:linear-gradient(to bottom right, #7DCEA0, #7fbbca) ;
+  	-fx-border-style: hidden hidden hidden hidden;
+    -fx-border-radius: 50px;
+    -fx-border-width: 2;
+    -fx-border-color: #7FBBCA;
+}

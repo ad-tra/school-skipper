@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="825.0" style="-fx-background-color:#EAECEE;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+            <Pane prefHeight="400.0" prefWidth="269.0" styleClass="left-pane" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" GridPane.columnIndex="1">
+         <children>
+                  <Text fill="#42362e" layoutX="17.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You will sleep as comfortable as ever with this script " wrappingWidth="161.0" x="5.0" y="5.0" GridPane.hgrow="ALWAYS" GridPane.valignment="BASELINE" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                     
+                  </Text>
+                  <Text fill="#2e2621" layoutX="1.0" layoutY="-3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATTENDANCE" wrappingWidth="203.767578125" x="20.0" y="119.0" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                     
+                  </Text>
+                  <ImageView cache="true" depthTest="ENABLE" fitHeight="415.0" fitWidth="511.0" layoutX="-17.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/MeditatingDoodle1.png" />
+                     </image>
+                  </ImageView>
+
+         </children>
+      </Pane>
+      <Pane fx:id="rightPane" layoutX="419.0" layoutY="77.0" prefHeight="400.0" prefWidth="487.0" styleClass="body" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="backButton" blendMode="COLOR_BURN" fitHeight="32.0" fitWidth="25.0" layoutX="28.0" layoutY="34.0" onMouseClicked="#backButtonHandle" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" styleClass="back-button">
+               <image>
+                  <Image url="@../../images/arrow.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="135.0" layoutY="91.0" prefHeight="354.0" prefWidth="288.0" style="-fx-background-color: #F4F6F6;" stylesheets="@style.css">
+               <children>
+                  <Text fill="#5d6d7e" layoutX="111.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up ">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox fx:id="gradeComboBox" focusColor="#527498" labelFloat="true" layoutX="50.0" layoutY="183.0" prefHeight="25.0" prefWidth="191.0" promptText="Grade" styleClass="field" stylesheets="@style.css" />
+                  <JFXComboBox fx:id="schoolComboBox" focusColor="#527498" labelFloat="true" layoutX="49.0" layoutY="124.0" prefHeight="25.0" prefWidth="191.0" promptText="School" styleClass="field" stylesheets="@style.css" />
+                  <JFXButton fx:id="doneButton" layoutX="237.0" layoutY="336.0" onMousePressed="#doneButtonHandle" prefHeight="37.0" prefWidth="75.0" ripplerFill="BLACK" stylesheets="@style.css" text="Done" textFill="#2b3d4fb2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXRadioButton layoutX="51.0" layoutY="245.0" selected="true" styleClass="field" stylesheets="@style.css" text="Chrome" textFill="#000000e1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="browserToggleGroup" />
+                     </toggleGroup></JFXRadioButton>
+                  <JFXRadioButton  layoutX="158.0" layoutY="245.0"  styleClass="field" stylesheets="@style.css" text="Firefox" textFill="#000000e0" toggleGroup="$browserToggleGroup" />
+               </children>
+            </Pane>
+            <Pane fx:id="logInPane1" layoutX="135.0" layoutY="91.0" prefHeight="354.0" prefWidth="288.0" style="-fx-background-color: #F4F6F6;" stylesheets="@style.css">
+               <children>
+                  <Text fill="#5d6d7e" layoutX="118.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="nameField" focusColor="#527498" labelFloat="true" layoutX="50.0" layoutY="119.0" prefHeight="25.0" prefWidth="75.0" promptText="Name" styleClass="field" unFocusColor="#7fbbca" />
+                  <JFXTextField fx:id="lastNameField" focusColor="#527498" labelFloat="true" layoutX="133.0" layoutY="119.0" prefHeight="25.0" prefWidth="108.0" promptText="Last name" styleClass="field" unFocusColor="#7fbbca">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailField" focusColor="#527498" labelFloat="true" layoutX="51.0" layoutY="178.0" prefHeight="25.0" prefWidth="191.0" promptText="Email" styleClass="field" unFocusColor="#7fbbca">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordField" focusColor="#527498" labelFloat="true" layoutX="50.0" layoutY="239.0" prefHeight="25.0" prefWidth="191.0" promptText="Password" styleClass="field" unFocusColor="#7fbbca">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="nextButton" layoutX="237.0" layoutY="336.0" onMouseClicked="#nextButtonHandle" prefHeight="37.0" prefWidth="75.0" text="Next" textFill="#2a3b4db3">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane> 
+         </children>
+      </Pane>
+      <Pane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" styleClass="left-pane" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="logInPaneMinor" layoutX="439.0" layoutY="351.0" prefHeight="116.0" prefWidth="344.0" styleClass="left-pane">
+               <children>
+                  <JFXButton fx:id="logInButton" layoutX="34.0" layoutY="32.0" onMousePressed="#logInButtonHandle" prefHeight="47.0" prefWidth="161.0" style="-fx-background-radius: 20px;" stylesheets="@style.css" text="Sign Up" textFill="#2b3d50">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="launchButton" layoutX="206.0" layoutY="32.0" onMousePressed="#launchButtonHandle" prefHeight="47.0" prefWidth="118.0" styleClass="button-secondary" stylesheets="@style.css" text="Launch" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <ImageView cache="true" depthTest="ENABLE" fitHeight="415.0" fitWidth="511.0" layoutX="-14.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/MeditatingDoodle1.png" />
+               </image>
+            </ImageView>
+            <Text fill="#42362e" layoutX="498.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You will sleep as comfortable as ever with this script " wrappingWidth="280.0" x="5.0" y="5.0">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#2e2621" layoutX="329.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATTENDANCE" wrappingWidth="588.767578125" x="20.0" y="119.0">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="logInButton1" layoutX="473.0" layoutY="383.0" onMousePressed="#launchButtonHandle" prefHeight="47.0" prefWidth="161.0" style="-fx-background-radius: 20px;" stylesheets="@style.css" text="Launch" textFill="#2b3d50">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="645.0" layoutY="383.0" onMousePressed="#logInButtonHandle" prefHeight="47.0" prefWidth="118.0" styleClass="button-secondary" stylesheets="@style.css" text="Edit Info" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
