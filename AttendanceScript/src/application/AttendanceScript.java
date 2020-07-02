@@ -218,7 +218,7 @@ private void fillGrade() throws Exception
 	Thread.sleep(500);
 	
 	//final submit
-	//driver.findElement(By.xpath("//form[@id='mG61Hd']/div/div/div[3]/div/div/div/span/span")).click();
+	driver.findElement(By.xpath("//form[@id='mG61Hd']/div/div/div[3]/div/div/div/span/span")).click();
 }
 
 
