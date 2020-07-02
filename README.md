@@ -19,8 +19,7 @@ you can download the project as a .zip file and extract it in your pc or clone t
 <!-- USAGE EXAMPLES -->
 # Usage
 
-[![Demo CountPages alpha](https://giphy.com/embed/XbmyupXKekymD7Nv2l)](https://streamable.com/e/6aurbk)
-
+[![Demo CountPages alpha](https://i.imgur.com/51Cye3t.gif)](https://streamable.com/e/6aurbk)
 *Click on the GIF to view full preview*
 
 
