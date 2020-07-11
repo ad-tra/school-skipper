@@ -84,8 +84,6 @@ private static void configUserInput()
 public boolean isUserInputEmpty()
 {
 	configUserInput();
-	//later change the get property  to grade or school  
-	//update later
 	if(prop.getProperty("grade").compareTo("") == 0)
 		{
 		return true;
@@ -193,6 +191,7 @@ private void fillSchoolName() throws Exception
 		if(userSchoolName.compareToIgnoreCase(schoolNames[i])==0)
 		{
 			index = i +3;
+			//stops loop
 			i=schoolNames.length;
 		}
 	}
