@@ -1,6 +1,6 @@
 
 # AttendaceScriptGUI
-A an app that fills a school attendance form so you can sleep in peace. 
+A an app that fills your school attendance form during virtual learning. You can sleep in peace. 
 ## Installation
 you can download the project as a .zip file and extract it in your pc or clone the repo. Then import the project into an IDE (like Eclipse) and run it from the ``fakeMain.``
 
